@@ -8,7 +8,7 @@ const FilmGrid = () => (
       <h1 className="absolute top-0 text-nowrap text-3xl font-semibold">
         Films for Ilef
       </h1>
-      <div className="absolute bottom-0 h-1 w-full rounded-sm bg-orange-400 bg-opacity-20"></div>
+      <div className="absolute bottom-0 h-1 w-full rounded-sm bg-orange-400 bg-opacity-30"></div>
     </div>
     <div className="grid w-full grid-cols-1 gap-x-10 gap-y-14 text-sky-900 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {filmList.map((film: filmInfo) => (
