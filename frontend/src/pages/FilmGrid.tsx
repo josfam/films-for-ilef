@@ -12,7 +12,7 @@ const FilmGrid = () => (
     </div>
     <div className="grid w-full grid-cols-1 gap-x-10 gap-y-14 text-sky-900 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {filmList.map((film: filmInfo) => (
-        <FilmCard coverName={`${film.coverName}`} />
+        <FilmCard coverName={`${film.coverName}`} title={`${film.title}`} released={`${film.released}`}/>
       ))}
     </div>
   </div>
