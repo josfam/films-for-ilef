@@ -1,12 +1,20 @@
-import './index.css'
-import './App.css'
+import "./index.css";
+import "./base.css";
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import FilmGrid from "./pages/FilmGrid";
+import MainLayout from "./Layouts/MainLayout";
 
 function App() {
   return (
-    <div className='flex items-center justify-center h-full w-full text-2xl bg-cyan-950'>
-      Hi
-    </div>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<FilmGrid />}></Route>
+        </Route>
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
