@@ -12,7 +12,7 @@ const FilmGrid = () => {
         </h1>
         <div className="absolute bottom-0 h-[2px] w-full rounded-sm bg-orange-400 bg-opacity-70"></div>
       </div>
-      <div className="grid w-full grid-cols-1 gap-x-10 gap-y-14 text-sky-900 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid w-full grid-cols-1 gap-x-10 gap-y-14 text-sky-900 sm:grid-cols-2 lg:grid-cols-3 xxl:grid-cols-6">
         {filmList.map((film: filmInfo) => (
           <FilmCard
             key={uuidv4()} // uuid unique key
