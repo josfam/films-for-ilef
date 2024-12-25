@@ -12,7 +12,7 @@ const FilmCard = ({ coverName, title, released }: FilmCardProps) => {
       <div className="group relative w-[300px] rounded-xl bg-slate-900 shadow-lg shadow-sky-900 hover:shadow-sky-600">
         <img
           src={`/covers/${coverName}.jpg`}
-          alt=""
+          alt={`Film cover for ${title}`}
           className="h-full w-full rounded-xl object-cover"
         />
         <div
