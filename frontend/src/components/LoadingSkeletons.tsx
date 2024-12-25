@@ -11,7 +11,7 @@ const FilmCardSkeleton = () => {
         animate={true}
       >
         {/* simulating the film card */}
-        <rect x="0" y="0" rx="10" ry="0" width="300" height="400" />
+        <rect x="0" y="0" rx="15" ry="15" width="314" height="471"/>
       </ContentLoader>
     </div>
   );
