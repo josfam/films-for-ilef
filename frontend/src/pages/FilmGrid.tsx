@@ -4,7 +4,7 @@ import { filmInfo } from "../types/Types";
 
 const FilmGrid = () => (
   <div>
-    <div className="relative mb-14 flex h-fit flex-col items-center justify-center py-6">
+    <div className="relative mb-16 flex h-fit flex-col items-center justify-center py-6">
       <h1 className="absolute top-0 text-nowrap text-3xl font-semibold">
         Films for Ilef
       </h1>
