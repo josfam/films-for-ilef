@@ -12,11 +12,11 @@ function App() {
     <>
       <Snowfall
         snowflakeCount={15}
-        speed={[1, 1]}
-        wind={[1, 3]}
+        speed={[0, 0.5]}
+        wind={[-0.5, 1]}
         radius={[1, 2]}
-        changeFrequency={1}
-        rotationSpeed={[1, 2]}
+        changeFrequency={240}
+        rotationSpeed={[-1.0, -1.5]}
         style={{
           position: "fixed",
           zIndex: 20,
