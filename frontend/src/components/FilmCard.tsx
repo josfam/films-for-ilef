@@ -1,4 +1,4 @@
-import { toast } from "sonner";
+import { SuccessToast } from "./toasts/Toasts";
 
 interface FilmCardProps {
   coverName: string;
@@ -24,7 +24,9 @@ const FilmCard = ({ coverName, title, released }: FilmCardProps) => {
           </div>
           <button
             className="btn-pri"
-            onClick={() => toast.success("Okay, I will recommend another soon")}
+            onClick={() =>
+              SuccessToast({ message: "Okay 🎉 I will recommend another soon" })
+            }
           >
             I've seen this one
           </button>
