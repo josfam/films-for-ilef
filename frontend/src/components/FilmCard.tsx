@@ -16,7 +16,7 @@ const FilmCard = ({ coverName, title, released }: FilmCardProps) => {
           className="h-full w-full rounded-xl object-cover"
         />
         <div
-          className={`group absolute bottom-0 flex h-full w-full scale-95 flex-col items-center justify-center gap-y-4 rounded-bl-xl rounded-br-xl px-7 opacity-0 transition-all delay-75 duration-200 hover:scale-100 hover:opacity-100 sm:h-1/2`}
+          className={`group absolute bottom-0 flex h-full w-full scale-95 flex-col items-center justify-center gap-y-4 rounded-bl-xl rounded-br-xl px-7 opacity-0 transition-all delay-75 duration-200 hover:scale-100 hover:opacity-100`}
         >
           <div className="z-10">
             <p className="text-xl text-white">{title}</p>
@@ -30,7 +30,7 @@ const FilmCard = ({ coverName, title, released }: FilmCardProps) => {
           </button>
           {/* background overlay */}
           <div
-            className={`absolute h-full w-full rounded-bl-xl rounded-br-xl rounded-tl-lg rounded-tr-lg bg-gray-900 opacity-75 sm:rounded-tl-3xl sm:rounded-tr-3xl`}
+            className={`absolute h-full w-full rounded-bl-xl rounded-br-xl rounded-tl-lg rounded-tr-lg bg-gray-900 opacity-75`}
           ></div>
         </div>
       </div>
