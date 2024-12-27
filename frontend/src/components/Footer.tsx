@@ -3,7 +3,7 @@ import { useState } from "react";
 const Footer = () => {
   const [currentEmoji, setCurrentEmoji] = useState<string>("🩵");
   const pickEmoji = (currentEmoji: string) => {
-    const options = ["🩷", "💖", "🎬", "😊", "💪", "💓", "😁"];
+    const options = ["🩷", "💖", "🎬", "😊", "💪", "💓", "😁", "🩵"];
     let nextEmoji;
     do {
       const randomIndex = Math.floor(Math.random() * options.length);
