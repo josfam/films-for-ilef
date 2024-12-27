@@ -14,7 +14,12 @@ const Footer = () => {
 
   return (
     <div className="flex h-fit w-full items-center justify-center bg-sky-900 py-12 text-xl text-slate-400">
-      Made with
+      <a
+        href="https://github.com/josfam/films-for-you"
+        className="text-sky-300 hover:text-sky-100 hover:underline"
+      >
+        Made with
+      </a>
       <span
         className={`ml-2 text-2xl text-sky-900 transition-all duration-150 hover:text-3xl active:text-4xl`}
         onClick={() => pickEmoji(currentEmoji)}
