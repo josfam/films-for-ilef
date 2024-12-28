@@ -18,4 +18,14 @@ const SuccessToast = ({ message }: ToastProps) => {
   });
 };
 
-export { SuccessToast };
+const ErrorToast = ({ message }: ToastProps) => {
+  return toast.error(message, {
+    classNames: {
+      title: "text-base",
+      description: "text-lg",
+      icon: "text-xl",
+    },
+  });
+};
+
+export { SuccessToast, ErrorToast };
