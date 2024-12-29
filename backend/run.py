@@ -3,7 +3,7 @@
 import json
 from pathlib import Path
 from fastapi import FastAPI, Response, status
-from .app_factory import create_app
+from backend.app_factory import create_app
 
 app = create_app()
 
