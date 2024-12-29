@@ -16,10 +16,9 @@ def create_app():
     # set up CORS
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["*"],
+        allow_origins=allowed_origins,
         allow_methods=["*"],
         allow_headers=["*"],
     )
-    print(allowed_origins)  # DEBUG
 
     return app
