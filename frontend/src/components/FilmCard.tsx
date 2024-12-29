@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { SuccessToast } from "./toasts/Toasts";
-import { FilmCardSkeleton } from "./LoadingSkeletons";
 
 interface FilmCardProps {
   coverName: string;
