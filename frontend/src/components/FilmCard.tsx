@@ -13,7 +13,6 @@ const FilmCard = ({ coverName, title, released }: FilmCardProps) => {
 
   return (
     <div className="flex w-full flex-grow items-center justify-center transition-all duration-200 hover:scale-105">
-      {!imageHasLoaded && <FilmCardSkeleton />}
       <div
         className={`group relative w-[300px] rounded-xl bg-slate-900 shadow-lg shadow-sky-900 hover:shadow-sky-600 ${imageHasLoaded ? "opacity-100" : "opacity-0"}`}
       >
