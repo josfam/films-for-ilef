@@ -15,11 +15,10 @@ def get_recommendations(response: Response):
     # determine storage path from the script's directory
     script_dir = Path(__file__).parent.parent
     film_file = str(script_dir / 'storage' / 'films.json')
-    print('Film file location', film_file)  # DEBUG
+
     try:
         with open(film_file, 'r', encoding='utf-8') as f:
             films_obj = json.load(f)
-            print('Films object', films_obj)  # DEBUG
     except Exception as e:
         response.status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
         return {"message": "Can't load the films right now. Try again"}
