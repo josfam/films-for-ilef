@@ -4,3 +4,6 @@ dist/
 
 # Virtual envs
 venv-films-for-you/
+
+# .env files
+.env
