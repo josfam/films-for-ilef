@@ -12,7 +12,9 @@ films_router = APIRouter(
 def get_recommendations(response: Response):
     """Returns films in the film list file that have not been watched yet"""
     films_obj = None
-    film_file = str(Path.cwd() / 'api' / 'v1' / 'storage' / 'films.json')
+    # determine storage path from the script's directory
+    script_dir = Path(__file__).parent.parent
+    film_file = str(script_dir / 'storage' / 'films.json')
     print('Film file location', film_file)  # DEBUG
     try:
         with open(film_file, 'r', encoding='utf-8') as f:
