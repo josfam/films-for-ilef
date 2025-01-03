@@ -2,12 +2,12 @@ import { useState } from "react";
 import { SuccessToast } from "./toasts/Toasts";
 
 interface FilmCardProps {
-  coverName: string;
+  coverUrl: string;
   title: string;
   released: string;
 }
 
-const FilmCard = ({ coverName, title, released }: FilmCardProps) => {
+const FilmCard = ({ coverUrl, title, released }: FilmCardProps) => {
   const [imageHasLoaded, setImageHasLoaded] = useState<boolean>(false);
 
   return (
@@ -16,7 +16,7 @@ const FilmCard = ({ coverName, title, released }: FilmCardProps) => {
         className={`group relative w-[300px] rounded-xl bg-slate-900 shadow-lg shadow-sky-900 hover:shadow-sky-600 ${imageHasLoaded ? "opacity-100" : "opacity-0"}`}
       >
         <img
-          src={`/covers/${coverName}.jpg`}
+          src={coverUrl}
           alt={`Film cover for ${title}`}
           className="h-full w-full rounded-xl object-cover"
           onLoad={() => setImageHasLoaded(true)}

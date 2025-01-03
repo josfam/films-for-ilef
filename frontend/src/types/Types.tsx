@@ -1,7 +1,7 @@
 type filmInfo = {
   title: string;
   released: string;
-  coverName: string;
+  coverUrl: string;
 };
 
 export type { filmInfo };
