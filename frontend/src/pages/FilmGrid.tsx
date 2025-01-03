@@ -36,7 +36,7 @@ const FilmGrid = () => {
     return films.map((film: filmInfo) => (
       <FilmCard
         key={uuidv4()} // uuid unique key
-        coverName={`${film.coverName}`}
+        coverUrl={`${film.coverUrl}`}
         title={`${film.title}`}
         released={`${film.released}`}
       />
